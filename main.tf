@@ -37,7 +37,7 @@ resource "aws_ssoadmin_permission_set_inline_policy" "main" {
   instance_arn       = aws_ssoadmin_permission_set.main.instance_arn
   permission_set_arn = aws_ssoadmin_permission_set.main.arn
 
-  depends_on = ["aws_ssoadmin_permission_set.main]
+  depends_on = ["aws_ssoadmin_permission_set.main"]
 }
 
 #######################################
