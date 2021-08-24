@@ -20,7 +20,7 @@ resource "aws_ssoadmin_managed_policy_attachment" "main" {
   managed_policy_arn = each.value
   permission_set_arn = aws_ssoadmin_permission_set.main.arn
 
-  depends_on = ["aws_ssoadmin_permission_set.main]
+  depends_on = ["aws_ssoadmin_permission_set.main"]
 }
 
 #######################################
